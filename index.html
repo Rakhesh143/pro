@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namineni Rakhesh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #1a1a2e;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 3rem; }
+    header p { font-size: 1.2rem; }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .skills span {
+      display: inline-block;
+      background: #dff9fb;
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    .projects .card {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #1a1a2e;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .contact-btn {
+      display: inline-block;
+      background: #0f3460;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #0f3460;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Namineni Rakhesh</h1>
+    <p>Frontend Developer | Angular • React • Web Design</p>
+    <a href="#contact" class="contact-btn">Contact Me</a>
+  </header>
+
+  <section class="section skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>React</span>
+    <span>Angular</span>
+    <span>TypeScript</span>
+    <span>Bootstrap</span>
+    <span>Next.js</span>
+  </section>
+
+  <section class="section projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Admin Dashboard</h3>
+      <p>A responsive dashboard built with Angular and chart.js</p>
+    </div>
+    <div class="card">
+      <h3>HR Management Tool</h3>
+      <p>Tool for managing employee data and payrolls.</p>
+    </div>
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>Fully responsive portfolio with project showcase and contact form.</p>
+    </div>
+  </section>
+
+  <section class="section experience" data-aos="fade-up">
+    <h2>Experience</h2>
+    <p><strong>Bizsoft Pvt. Ltd.</strong> – Frontend Developer (2023–2024)</p>
+    <p><strong>TkLogics</strong> – Frontend Developer (Remote)</p>
+  </section>
+
+  <section class="section education" data-aos="fade-up">
+    <h2>Education</h2>
+    <p>Bachelor in Computer Science – KASBIT University</p>
+    <p>Diploma in Software Engineering – Aptech</p>
+  </section>
+
+  <section class="section contact" id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form action="/contact" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" value="naminenirakesh@gmail.com" required><br>
+      <input type="text" name="phone" placeholder="Your Mobile Number" value="9392475264" required><br>
+      <textarea name="message" placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Namineni Rakhesh. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
